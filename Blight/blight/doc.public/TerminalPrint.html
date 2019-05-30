@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="Objects.html">
+<link rel="next" href="Infection.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Objects" rel="Chapter" href="Objects.html">
+<link title="TerminalPrint" rel="Chapter" href="TerminalPrint.html">
+<link title="Infection" rel="Chapter" href="Infection.html">
+<link title="Controller" rel="Chapter" href="Controller.html">
+<link title="Demomap" rel="Chapter" href="Demomap.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="News" rel="Chapter" href="News.html">
+<link title="Upgrade" rel="Chapter" href="Upgrade.html">
+<link title="App" rel="Chapter" href="App.html"><title>TerminalPrint</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="Objects.html" title="Objects">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="Infection.html" title="Infection">Next</a>
+</div>
+<h1>Module <a href="type_TerminalPrint.html">TerminalPrint</a></h1>
+
+<pre><span id="MODULETerminalPrint"><span class="keyword">module</span> TerminalPrint</span>: <code class="code">sig</code> <a href="TerminalPrint.html">..</a> <code class="code">end</code></pre><hr width="100%">
+
+<pre><span id="VALprint_map"><span class="keyword">val</span> print_map</span> : <code class="type"><a href="Objects.Tile.html#TYPEt">Objects.Tile.t</a> array array -> int -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">print_map map time</code> prints the map <code class="code">map</code> followed by the time <code class="code">time</code>
+    elapsed so far in the world.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_living_dead"><span class="keyword">val</span> print_living_dead</span> : <code class="type"><a href="State.State.html#TYPEt">State.State.t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">print_living_dead state</code> prints information about how many living
+    and dead people there are in the world.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_infected"><span class="keyword">val</span> print_infected</span> : <code class="type"><a href="State.State.html#TYPEt">State.State.t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">print_infected state</code> prints the total number of infected people in
+    the world given by state <code class="code">state</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_population"><span class="keyword">val</span> print_population</span> : <code class="type"><a href="State.State.html#TYPEt">State.State.t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">print_population state</code> prints the total number of people in the world
+    given by state <code class="code">state</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALprint_world_info"><span class="keyword">val</span> print_world_info</span> : <code class="type"><a href="State.State.html#TYPEt">State.State.t</a> -> unit</code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">print_world_info state</code> prints out a bar that indicates the proportion
+    of the population that is living, infected, and dead.</p>
+</div>
+</div>
+</body></html>

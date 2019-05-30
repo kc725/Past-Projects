@@ -1,0 +1,104 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<link rel="stylesheet" href="style.css" type="text/css">
+<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="Start" href="index.html">
+<link rel="previous" href="News.html">
+<link rel="next" href="App.html">
+<link rel="Up" href="index.html">
+<link title="Index of types" rel=Appendix href="index_types.html">
+<link title="Index of exceptions" rel=Appendix href="index_exceptions.html">
+<link title="Index of values" rel=Appendix href="index_values.html">
+<link title="Index of modules" rel=Appendix href="index_modules.html">
+<link title="Objects" rel="Chapter" href="Objects.html">
+<link title="TerminalPrint" rel="Chapter" href="TerminalPrint.html">
+<link title="Infection" rel="Chapter" href="Infection.html">
+<link title="Controller" rel="Chapter" href="Controller.html">
+<link title="Demomap" rel="Chapter" href="Demomap.html">
+<link title="State" rel="Chapter" href="State.html">
+<link title="News" rel="Chapter" href="News.html">
+<link title="Upgrade" rel="Chapter" href="Upgrade.html">
+<link title="App" rel="Chapter" href="App.html"><title>Upgrade</title>
+</head>
+<body>
+<div class="navbar"><a class="pre" href="News.html" title="News">Previous</a>
+&nbsp;<a class="up" href="index.html" title="Index">Up</a>
+&nbsp;<a class="post" href="App.html" title="App">Next</a>
+</div>
+<h1>Module <a href="type_Upgrade.html">Upgrade</a></h1>
+
+<pre><span id="MODULEUpgrade"><span class="keyword">module</span> Upgrade</span>: <code class="code">sig</code> <a href="Upgrade.html">..</a> <code class="code">end</code></pre><hr width="100%">
+
+<pre><code><span id="TYPEupgrade"><span class="keyword">type</span> <code class="type"></code>upgrade</span> = {</code></pre><table class="typetable">
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTupgrade.inner_tile_boost">inner_tile_boost</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTupgrade.tile_to_tile_boost">tile_to_tile_boost</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTupgrade.water_boost">water_boost</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTupgrade.road_boost">road_boost</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTupgrade.spread_probability_boost">spread_probability_boost</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr>
+<tr>
+<td align="left" valign="top" >
+<code>&nbsp;&nbsp;</code></td>
+<td align="left" valign="top" >
+<code><span id="TYPEELTupgrade.lethality_boost">lethality_boost</span>&nbsp;: <code class="type">int</code>;</code></td>
+
+</tr></table>
+}
+
+
+
+<pre><span id="VALupgrade_list"><span class="keyword">val</span> upgrade_list</span> : <code class="type">string list</code></pre><div class="info ">
+<div class="info-desc">
+<p>The list of available upgrades for the user to choose from.</p>
+</div>
+</div>
+
+<pre><span id="VALupgrade_disease"><span class="keyword">val</span> upgrade_disease</span> : <code class="type"><a href="Upgrade.html#TYPEupgrade">upgrade</a> -> <a href="Objects.Disease.html#TYPEt">Objects.Disease.t</a> -> <a href="Objects.Disease.html#TYPEt">Objects.Disease.t</a></code></pre><div class="info ">
+<div class="info-desc">
+<p><code class="code">upgrade_disease upgrade disease</code> upgrades a disease <code class="code">disease</code> given the
+    upgrade information <code class="code">upgrade</code>.</p>
+</div>
+</div>
+
+<pre><span id="VALmosquito_transmission"><span class="keyword">val</span> mosquito_transmission</span> : <code class="type"><a href="Upgrade.html#TYPEupgrade">upgrade</a></code></pre>
+<pre><span id="VALrat_transmission"><span class="keyword">val</span> rat_transmission</span> : <code class="type"><a href="Upgrade.html#TYPEupgrade">upgrade</a></code></pre>
+<pre><span id="VALwater_supply_infection"><span class="keyword">val</span> water_supply_infection</span> : <code class="type"><a href="Upgrade.html#TYPEupgrade">upgrade</a></code></pre>
+<pre><span id="VALavian_transmission"><span class="keyword">val</span> avian_transmission</span> : <code class="type"><a href="Upgrade.html#TYPEupgrade">upgrade</a></code></pre>
+<pre><span id="VALfever"><span class="keyword">val</span> fever</span> : <code class="type"><a href="Upgrade.html#TYPEupgrade">upgrade</a></code></pre>
+<pre><span id="VALvomiting"><span class="keyword">val</span> vomiting</span> : <code class="type"><a href="Upgrade.html#TYPEupgrade">upgrade</a></code></pre>
+<pre><span id="VALaggression"><span class="keyword">val</span> aggression</span> : <code class="type"><a href="Upgrade.html#TYPEupgrade">upgrade</a></code></pre>
+<pre><span id="VALinternal_hemorrhaging"><span class="keyword">val</span> internal_hemorrhaging</span> : <code class="type"><a href="Upgrade.html#TYPEupgrade">upgrade</a></code></pre>
+<pre><span id="VALcannibalism"><span class="keyword">val</span> cannibalism</span> : <code class="type"><a href="Upgrade.html#TYPEupgrade">upgrade</a></code></pre>
+<pre><span id="VALuncontained_rabies"><span class="keyword">val</span> uncontained_rabies</span> : <code class="type"><a href="Upgrade.html#TYPEupgrade">upgrade</a></code></pre>
+<pre><span id="VALtotal_collapse"><span class="keyword">val</span> total_collapse</span> : <code class="type"><a href="Upgrade.html#TYPEupgrade">upgrade</a></code></pre></body></html>
