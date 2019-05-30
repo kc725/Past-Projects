@@ -6,13 +6,13 @@ Blight is a game where players can choose a disease and place it on a randomly g
 
 ## Images
 >The beginning menu screen
-![](https://imgur.com/3HgvMGM)
+![](https://i.imgur.com/3HgvMGM.png)
 
 >The beginning customization screen
-![](https://imgur.com/N6pN4vM)
+![](https://i.imgur.com/N6pN4vM.png)
 
 >The world map showing the spread of the disease
-![](https://imgur.com/QEGG2fd)
+![](https://i.imgur.com/QEGG2fd.png)
 
 >The upgrade screen
-![](https://imgur.com/tLxPpXj)
+![](https://i.imgur.com/tLxPpXj.png)
